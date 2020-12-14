@@ -1,6 +1,7 @@
-again="n"
-while again !="y":
-    
+again="y"
+
+while again !="n":
+
     colours = {
         "black": r"\u00A70",
         "dark blue": r"\u00A71",
@@ -25,15 +26,14 @@ while again !="y":
 
     dig1=text[1-1]
     dig2=text[2-1]
-    dig3=text[3-1]
-    dig4=text[4-1]
-    dig5=text[5-1]
 
     print("There are these many colours to choose from:",len(colours))
     print("Here are the colours: \n black, dark blue, dark green, dark aqua, dark red, dark purple, gold, gray, dark gray, indigo, green, aqua, red, pink, yellow, white")
+    
 
-    col1=input("please enter your first colour from the list: ")
+    col1=input(str("please enter your first colour from the list: "))
 
     print ("\n","Here is the final MOTD code:",col1,dig1)
 
-    restart=input("\nWould you like to repeat? [y/n] ")
+    again=input("\nWould you like to repeat? [y/n] ")
+
